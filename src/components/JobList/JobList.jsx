@@ -5,6 +5,10 @@ JobList.propTypes = {
 	jobList: PropTypes.array,
 };
 
+JobList.defaultProps = {
+	jobList: []
+}
+
 function JobList({ jobList }) {
 	return (
 		<ul className={styles.list}>
