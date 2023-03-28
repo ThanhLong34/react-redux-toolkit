@@ -1,6 +1,12 @@
-import { createStore } from "redux";
-import rootReducer from "../reducers";
+import { configureStore } from "@reduxjs/toolkit";
+import jobReducer from "./jobSlice";
 
-const store = createStore(rootReducer);
+const rootReducer = {
+	job: jobReducer,
+};
+
+const store = configureStore({
+	reducer: rootReducer,
+});
 
 export default store;

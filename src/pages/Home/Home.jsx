@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addJob } from "../../actions/job";
+import { addJob } from "../../store/jobSlice";
 import styles from "./Home.module.css";
 import JobList from "../../components/JobList/JobList";
 
@@ -24,7 +24,7 @@ function Home() {
 
 	return (
 		<div className={styles.wrapper}>
-			<h1 className="page-title">JOB LIST</h1>
+			<h1 className="page-title">JOB LIST WITH REDUX TOOLKIT</h1>
 			<JobList jobList={jobList} />
 
 			{/* Add job */}
