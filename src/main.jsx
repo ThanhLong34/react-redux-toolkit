@@ -9,9 +9,9 @@ import "./assets/styles/reset.css";
 import "./assets/styles/main.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<Provider store={store}>
-		<React.StrictMode>
+	<React.StrictMode>
+		<Provider store={store}>
 			<App />
-		</React.StrictMode>
-	</Provider>
+		</Provider>
+	</React.StrictMode>
 );

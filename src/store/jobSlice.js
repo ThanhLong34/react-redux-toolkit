@@ -20,6 +20,7 @@ const job = createSlice({
 		deleteJob: (state, action) => {
 			// ...
 		}
+		
 		// other aciton ...
 	},
 });
